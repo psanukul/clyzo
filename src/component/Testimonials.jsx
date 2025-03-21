@@ -49,7 +49,7 @@ const Testimonials = () => {
       company: "AFT LabPvt Ltd",
       image: testimonial3,
       rating: 5,
-      testimonial: "Beingpart of Clyzon 6 monthshasbeen a privilege. It saremarkable platform."
+      testimonial: "Beinsfdsdfsdfsdfsdfgpart of Clyzon 6 monthshasbeen a privilege. It saremarkable platform."
     }
   ];
 
