@@ -1,4 +1,4 @@
-import Banner from './component/banner'
+import Banner from './component/banner.jsx'
 import Category from './component/Counter.jsx' 
 import Categories from "./Component/Categories/Categories.jsx"
 
