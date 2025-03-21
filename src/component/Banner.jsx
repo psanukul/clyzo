@@ -41,6 +41,17 @@ const Banner = () => {
     )
   }, [currentIndex])
 
+  useEffect(() => {
+    // Preload all banner images
+    const preloadImages = () => {
+      images.forEach(img => {
+        const image = new Image();
+        image.src = img.src;
+      });
+    };
+    preloadImages();
+  }, []);
+
   const handleDotClick = (index) => {
     setCurrentIndex(index)
   }
