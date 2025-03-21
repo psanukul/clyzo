@@ -5,7 +5,7 @@ import GlobalPrinciple from "./component/GlobalPrinciple/GlobalPrinciple.jsx";
 import Testimonials from './component/Testimonials.jsx'
 function App() {
   return (
-    <div>
+    <div className="max-w-full overflow-hidden">
       <Banner />
       <Category />
       <Categories />

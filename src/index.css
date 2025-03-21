@@ -2,34 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* Custom Scrollbar */
-.scrollbar-custom::-webkit-scrollbar {
-  width: 2px; /* Make scrollbar very thin */
-  height: 2px; /* Make scrollbar very thin */
-}
-
-/* Track (Background of the Scrollbar) */
-.scrollbar-custom::-webkit-scrollbar-track {
-  background: #BBEADC;
-  border-radius: 2px;
-}
-
-/* Thumb (Draggable Scrollbar Handle) */
-.scrollbar-custom::-webkit-scrollbar-thumb {
-  background: white;
-  border-radius: 10px;
-}
-
-/* Hide Left/Right Scroll Buttons */
-.scrollbar-custom::-webkit-scrollbar-button {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-/* Firefox Support */
-.scrollbar-custom {
-  scrollbar-width: thin; /* Closest to 2px */
-  scrollbar-color: white #BBEADC;
-}

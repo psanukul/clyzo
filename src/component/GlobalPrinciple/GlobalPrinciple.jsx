@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "./Card";
 import "../../index.css";
-
 
 const cardsData = [
   {
@@ -103,8 +102,19 @@ const cardsData = [
 ];
 
 const GlobalPrinciple = () => {
+  useEffect(() => {
+    const preloadImages = () => {
+      cardsData.forEach((item) => {
+        if (item.partnerImage) {
+          const img = new Image();
+          img.src = item.partnerImage;
+        }
+      });
+    };
+    preloadImages();
+  }, []);
   return (
-    <div className="bg-white mt-5 h-[70vh] w-full mb-80 md:mb-48 ">
+    <div className="bg-white mt-5 w-full mb-80 md:mb-48 -z-3 ">
       <div className="flex flex-col justify-center gap-0 px-1 lg:px-40 lg:py-1">
         <div className="flex flex-row items-center gap-1 ">
           <div className="flex flex-row justify-center items-center gap-1">
@@ -128,14 +138,18 @@ const GlobalPrinciple = () => {
       </div>
 
       {/* card Section  */}
-      <div className="p-5 w-full pb-10">
-  <div className="grid grid-rows-2 grid-flow-col gap-20 h-full overflow-x-auto p-9 scrollbar-custom ">
-    {cardsData.map((card, index) => (
-      <Card key={index} bgImage={card.bgImage} partnerImage={card.partnerImage} />
-    ))}
-  </div>
-</div>
 
+      <div className="p-5  max-w-full  overflow-x-auto pb-10">
+        <div className="grid grid-rows-2 grid-flow-col gap-20  min-w-max p-8">
+          {cardsData.map((card, index) => (
+            <Card
+              key={index}
+              bgImage={card.bgImage}
+              partnerImage={card.partnerImage}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
