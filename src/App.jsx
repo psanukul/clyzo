@@ -9,7 +9,6 @@ function App() {
       <Category />
       <Categories />
       <GlobalPrinciple />
-      <Categories />
     </div>
   );
 }
