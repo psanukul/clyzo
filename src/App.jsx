@@ -1,15 +1,18 @@
-import Categories from "./Component/Categories/Categories.jsx"
-import GlobalPrinciple from "./Component/GlobalPrinciple/GlobalPrinciple.jsx"
+import "./App.css";
+import Banner from "./component/banner";
+import Category from "./component/Category";
+import Categories from "./Component/Categories/Categories.jsx";
+import GlobalPrinciple from "./Component/GlobalPrinciple/GlobalPrinciple.jsx";
 
 function App() {
-
-
   return (
-    <h1 className="text-3xl font-bold ">
-      <Categories/>
-      <GlobalPrinciple/>
-    </h1>
-  )
+    <div>
+      <Banner />
+      <Category />
+      <Categories />
+      <GlobalPrinciple />
+    </div>
+  );
 }
 
-export default App
+export default App;
