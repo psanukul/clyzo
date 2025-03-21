@@ -312,6 +312,20 @@ export default function App() {
      window.innerWidth < 480 ? 3 : window.innerWidth < 640 ? 2 : window.innerWidth < 768 ? 4 : window.innerWidth < 1000 ? 6 : 10
   );
 
+  useEffect(() => {
+    const preloadImages = () => {
+      Object.values(categories).forEach(category => {
+        category.forEach(item => {
+          if (item.Bgimage) {
+            const img = new Image();
+            img.src = item.Bgimage;
+          }
+        });
+      });
+    };
+    preloadImages();
+  }, []);
+
 useEffect(() => {
   const updateItemsPerPage = () => {
     setItemsPerPage(  window.innerWidth < 4 ? 3 : window.innerWidth < 640 ? 2 : window.innerWidth < 768 ? 4 : window.innerWidth < 1000 ? 6 : 10);

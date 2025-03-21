@@ -4,7 +4,7 @@ import Categories from "./component/Categories/Categories.jsx";
 import GlobalPrinciple from "./component/GlobalPrinciple/GlobalPrinciple.jsx";
 function App() {
   return (
-    <div>
+    <div className="max-w-full overflow-hidden">
       <Banner />
       <Category />
       <Categories />
