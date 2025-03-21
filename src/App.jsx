@@ -1,18 +1,18 @@
-import Banner from './component/banner.jsx'
-import Category from './component/Counter.jsx' 
-import Categories from "./Component/Categories/Categories.jsx"
+import Banner from "./component/Banner.jsx";
+import Category from "./component/Category.jsx";
+import Categories from "./component/Categories/Categories.jsx";
+import GlobalPrinciple from "./component/GlobalPrinciple/GlobalPrinciple.jsx";
 import Testimonials from './component/Testimonials.jsx'
-
 function App() {
-
   return (
-    <div >
-    <Banner />
-    <Category />
-    <Categories/>
-    <Testimonials/>
-  </div>
-  )
+    <div>
+      <Banner />
+      <Category />
+      <Categories />
+      <GlobalPrinciple />
+      <Testimonials/>
+    </div>
+  );
 }
 
-export default App
+export default App;

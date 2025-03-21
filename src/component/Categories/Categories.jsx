@@ -308,7 +308,18 @@ export default function App() {
   const [bgImage, setBgImage] = useState("")
   const overlayRef = useRef(null)
   const [currentPage, setCurrentPage] = useState(0)
-  const itemsPerPage = 10
+  const [itemsPerPage, setItemsPerPage] = useState(
+     window.innerWidth < 480 ? 3 : window.innerWidth < 640 ? 2 : window.innerWidth < 768 ? 4 : window.innerWidth < 1000 ? 6 : 10
+  );
+
+useEffect(() => {
+  const updateItemsPerPage = () => {
+    setItemsPerPage(  window.innerWidth < 4 ? 3 : window.innerWidth < 640 ? 2 : window.innerWidth < 768 ? 4 : window.innerWidth < 1000 ? 6 : 10);
+  };
+
+  window.addEventListener("resize", updateItemsPerPage);
+  return () => window.removeEventListener("resize", updateItemsPerPage);
+}, []);
 
   useEffect(() => {
     if (gridRef.current) {
@@ -402,10 +413,10 @@ export default function App() {
   const currentItems = categories[activeCategory].slice(startIndex, endIndex)
 
   return (
-    <div className="bg-gradient-to-r from-white to-[#9d9c9c] h-full w-full">
+    <div className="bg-gradient-to-r from-white to-[#9d9c9c] h-full w-full overflow-x-hidden">
   
     
-     <div className="flex flex-col  justify-center gap-0 px-40 py-1">
+     <div className="flex flex-col justify-center gap-0 px-1 lg:px-40 lg:py-1">
         <div className="flex flex-row items-center gap-1 ">
         <div className ="flex flex-row justify-center items-center gap-1">
     <div className="h-2 w-2  bg-[#3AC29A] rounded-full"></div>
@@ -430,7 +441,7 @@ export default function App() {
       
     <div
       ref={outerMostDivRef}
-      className=" flex flex-col items-center px-6 py-2 h-[80vh] relative"
+      className=" flex flex-col items-center px-6 py-2 sm:h-full lg:h-[80vh] relative"
       style={{
         backgroundImage: bgImage ? `url("${bgImage}")` : "none",
         backgroundSize: "cover",
@@ -456,7 +467,7 @@ export default function App() {
           {Object.keys(categories).map((cat) => (
             <button
               key={cat}
-              className={`px-4 py-2 text-sm font-semibold rounded transition-all ${
+              className={` sm:px-2 lg:px-4 py-2 text-sm font-semibold rounded transition-all ${
                 activeCategory === cat
                   ? "underline underline-offset-2 text-[#2A8D70]"
                   : "text-gray-600 hover:text-[#2A8D70]"
@@ -477,7 +488,7 @@ export default function App() {
           {currentPage >0 && (
             <button
               onClick={handlePrevPage}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-20 bg-[#9dcdbf] backdrop-blur-sm rounded-full p-2 shadow-md hover:bg-[#2A8D70] hover:text-white ml-3 transition-colors"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-20 bg-[#9dcdbf] backdrop-blur-sm rounded-full p-2 shadow-md hover:bg-[#2A8D70] hover:text-white ml-5 lg:ml-4 transition-colors"
               aria-label="Previous page"
             >
               <ChevronLeft className="w-4 h-4" />
@@ -512,7 +523,7 @@ export default function App() {
           {totalPages-1 >currentPage && (
             <button
               onClick={handleNextPage}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-20 bg-[#9dcdbf] backdrop-blur-sm rounded-full p-2 shadow-md hover:bg-[#2A8D70] hover:text-white mr-3 transition-colors"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-20 bg-[#9dcdbf] backdrop-blur-sm rounded-full p-2 shadow-md hover:bg-[#2A8D70] hover:text-white mr-6 lg:mr-4 transition-colors"
               aria-label="Next page"
             >
               <ChevronRight className="w-4 h-4" />
