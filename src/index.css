@@ -2,17 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-transition::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    transition: opacity 0.8s ease-in-out;
-    z-index: -1;
-  }
+
+/* Custom Scrollbar */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 2px; /* Make scrollbar very thin */
+  height: 2px; /* Make scrollbar very thin */
+}
+
+/* Track (Background of the Scrollbar) */
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #BBEADC;
+  border-radius: 2px;
+}
+
+/* Thumb (Draggable Scrollbar Handle) */
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+/* Hide Left/Right Scroll Buttons */
+.scrollbar-custom::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Firefox Support */
+.scrollbar-custom {
+  scrollbar-width: thin; /* Closest to 2px */
+  scrollbar-color: white #BBEADC;
+}

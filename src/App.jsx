@@ -1,15 +1,16 @@
-import Banner from './component/Banner.jsx'
-import Categories from "./Component/Categories/Categories.jsx"
-
+import Banner from "./component/Banner.jsx";
+import Category from "./component/Category.jsx";
+import Categories from "./component/Categories/Categories.jsx";
+import GlobalPrinciple from "./component/GlobalPrinciple/GlobalPrinciple.jsx";
 function App() {
-
   return (
-    <div >
+    <div>
       <Banner />
-      <div className="h-[200vh] bg-black"></div>
-      <Categories/>
+      <Category />
+      <Categories />
+      <GlobalPrinciple />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
