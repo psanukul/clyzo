@@ -1,4 +1,4 @@
-import Banner from './component/banner'
+import Banner from './component/Banner.jsx'
 import Categories from "./Component/Categories/Categories.jsx"
 
 function App() {
