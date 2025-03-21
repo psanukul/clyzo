@@ -413,7 +413,7 @@ useEffect(() => {
   const currentItems = categories[activeCategory].slice(startIndex, endIndex)
 
   return (
-    <div className="bg-gradient-to-r from-white to-[#9d9c9c] h-full w-full">
+    <div className="bg-gradient-to-r from-white to-[#9d9c9c] h-full w-full overflow-x-hidden">
   
     
      <div className="flex flex-col justify-center gap-0 px-1 lg:px-40 lg:py-1">
@@ -488,7 +488,7 @@ useEffect(() => {
           {currentPage >0 && (
             <button
               onClick={handlePrevPage}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-20 bg-[#9dcdbf] backdrop-blur-sm rounded-full p-2 shadow-md hover:bg-[#2A8D70] hover:text-white ml-5 lg:ml-3 transition-colors"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-20 bg-[#9dcdbf] backdrop-blur-sm rounded-full p-2 shadow-md hover:bg-[#2A8D70] hover:text-white ml-5 lg:ml-4 transition-colors"
               aria-label="Previous page"
             >
               <ChevronLeft className="w-4 h-4" />
@@ -523,7 +523,7 @@ useEffect(() => {
           {totalPages-1 >currentPage && (
             <button
               onClick={handleNextPage}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-20 bg-[#9dcdbf] backdrop-blur-sm rounded-full p-2 shadow-md hover:bg-[#2A8D70] hover:text-white mr-6 lg:mr-3 transition-colors"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-20 bg-[#9dcdbf] backdrop-blur-sm rounded-full p-2 shadow-md hover:bg-[#2A8D70] hover:text-white mr-6 lg:mr-4 transition-colors"
               aria-label="Next page"
             >
               <ChevronRight className="w-4 h-4" />

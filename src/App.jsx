@@ -1,8 +1,8 @@
 import "./App.css";
 import Banner from "./component/banner";
 import Category from "./component/Category";
-import Categories from "./Component/Categories/Categories.jsx";
-import GlobalPrinciple from "./Component/GlobalPrinciple/GlobalPrinciple.jsx";
+import Categories from "./component/Categories/Categories.jsx";
+import GlobalPrinciple from "./component/GlobalPrinciple/GlobalPrinciple.jsx";
 
 function App() {
   return (
@@ -11,6 +11,8 @@ function App() {
       <Category />
       <Categories />
       <GlobalPrinciple />
+      <Categories  />
+
     </div>
   );
 }

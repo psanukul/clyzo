@@ -4,7 +4,7 @@ const Card = ({ bgImage, partnerImage }) => {
     console.log(partnerImage)
   return (
     <div
-      className="flex justify-center items-center w-52 h-52 rounded-2xl overflow-hidden shadow-lg bg-cover bg-center transform transition-transform duration-300 group hover:scale-105"
+      className="flex justify-center items-center w-40 h-40  rounded-2xl overflow-hidden shadow-lg bg-cover bg-center transform transition-transform duration-300 group hover:scale-105"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Child div with partner background */}
