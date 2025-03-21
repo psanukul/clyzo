@@ -1,5 +1,5 @@
-import Banner from './component/banner.jsx'
-import Category from './component/Counter.jsx' 
+import Banner from './Component/Banner.jsx'
+import Category from './Component/Counter.jsx' 
 import Categories from "./Component/Categories/Categories.jsx"
 
 function App() {
