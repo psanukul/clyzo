@@ -1,12 +1,14 @@
+import Banner from './component/banner'
 import Categories from "./Component/Categories/Categories.jsx"
 
 function App() {
 
-
   return (
-    <h1 className="text-3xl font-bold ">
+    <div >
+      <Banner />
+      <div className="h-[200vh] bg-black"></div>
       <Categories/>
-    </h1>
+    </div>
   )
 }
 
