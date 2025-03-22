@@ -3,6 +3,9 @@ import Category from "./component/Category.jsx";
 import Categories from "./component/Categories/Categories.jsx";
 import GlobalPrinciple from "./component/GlobalPrinciple/GlobalPrinciple.jsx";
 import Testimonials from './component/Testimonials.jsx'
+import PopularExcipients from "./component/PopularExcipients/PopularExcipients.jsx";
+import OtherServices from "./component/OtherServices/OtherServices.jsx";
+import ResourcesDowonloads from "./component/ResourcesDowonloads/ResourcesDowonloads.jsx";
 function App() {
   return (
     <div className="max-w-full overflow-hidden">
@@ -11,6 +14,9 @@ function App() {
       <Categories />
       <GlobalPrinciple />
       <Testimonials/>
+      <PopularExcipients/>
+      <OtherServices/>
+       {/* <ResourcesDowonloads/> */}
     </div>
   );
 }
