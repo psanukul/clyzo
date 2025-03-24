@@ -3,6 +3,11 @@
 import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+
+import "@fontsource/questrial"; // Questrial font
+import "@fontsource/oswald"; // Regular font
+
+
 gsap.registerPlugin(ScrollTrigger)
 
 const CategoriesSection = () => {
@@ -53,10 +58,10 @@ const CategoriesSection = () => {
           <div className="flex flex-col items-center">
             <span
             //   ref={customersRef}
-              className="text-6xl md:text-7xl font-bold text-transparent"
+              className="text-6xl md:text-8xl font-bold text-transparent"
               style={{
                 WebkitTextStroke: "2px #3cb489",
-                fontFamily: "'Arial', sans-serif",
+                fontFamily: "'Oswald', sans-serif",
                 lineHeight: "1",
               }}
             >
@@ -69,10 +74,10 @@ const CategoriesSection = () => {
           <div className="flex flex-col items-center">
             <span
             //   ref={partnersRef}
-              className="text-6xl md:text-7xl font-bold text-transparent"
+              className="text-6xl md:text-8xl font-bold text-transparent"
               style={{
                 WebkitTextStroke: "2px #3cb489",
-                fontFamily: "'Arial', sans-serif",
+                fontFamily: "'Oswald', sans-serif",
                 lineHeight: "1",
               }}
             >
@@ -85,10 +90,11 @@ const CategoriesSection = () => {
           <div className="flex flex-col items-center">
             <span
             //   ref={productsRef}
-              className="text-6xl md:text-7xl font-bold text-transparent"
+              className="text-6xl md:text-8xl font-bold text-transparent"
               style={{
                 WebkitTextStroke: "2px #3cb489",
-                fontFamily: "'Arial', sans-serif",
+                // fontFamily: "'Questrial', sans-serif",
+                fontFamily: "'Oswald', sans-serif",
                 lineHeight: "1",
               }}
             >
