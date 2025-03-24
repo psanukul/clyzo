@@ -37,15 +37,16 @@ const OtherServices = () => {
             className="relative h-[80vh] w-auto object-contain items-start"
           />
         </div>
-        <div className="absolute  mt-[30vh] sm:mt-[18vh] md:mt-[12vh] h-[35vh] sm:h-[45vh] md:h-[50vh] lg:h-[50vh] w-[68%] md:w-[38%] text-white z-20 font-bold flex flex-col items-center justify-start text-[10px] sm:text-[20px] md:text-sm">
-          <p className=" text-[2vh] sm:text-[3vh] md:text-[5vh] mb-1 sm:mt-auto md:mb-6 font-normal">REGpro..</p>
+        <div className="absolute  mt-[30vh] sm:mt-[18vh] md:mt-[12vh] h-[30vh] sm:h-[45vh] md:h-[50vh] lg:h-[50vh] w-[68%] md:w-[38%] text-white z-20 font-bold flex flex-col items-center justify-start text-[10px] sm:text-[20px] md:text-sm">
+    
+         <p className=" text-[2vh] sm:text-[3vh] md:text-[5vh] mb-1 md:mb-6 font-semibold">REGpro <span className="text-[2vh] sm:text-[3vh] md:text-[10vh] ">..</span></p>
           <div className="w-full">
             <p>What’s easier than </p>
             <p className=" text-[2vh] sm:text-[8vh] md:text-[10vh] py-0 md:py-6  font-normal">ONE CLICK</p>
           </div>
 
-          <p className="text-[1.6vh] md:text-[3vh] font-semibold"> for all your regulatory document needs ?</p>
-          <button className="border border-2px border-white bottom-6 mb-32 sm:mb-14 mt-auto text-[1.3vh] md:text-sm px-1 md:px-3 hover:text-green-500 hover:border-green-500 hover:scale-105 duration-300">Know more</button>
+          <p className="text-[1.6vh] md:text-[3vh] font-bold pl-10"> for all your regulatory document needs ?</p>
+          <button className="border border-2px border-white bottom-4 md:bottom-6 mb-32 sm:mb-14 mt-auto text-[1.3vh] md:text-[10px] px-2 shadow-sm shadow-white md:px-3 hover:text-green-500 hover:border-green-500 hover:scale-105 duration-300">Know more</button>
         </div>
       </div>
 

@@ -1,4 +1,4 @@
-
+"use client"
 
 import { useState, useEffect, useRef } from "react"
 import gsap from "gsap"
@@ -127,108 +127,107 @@ const categories = {
       Bgimage: "/CATEGORIES BACKGROUND BANNER/Parabens.jpg",
     },
     {
-        name: "Alcohol",
-        desc: "Solvent and preservative enhancing pharmaceutical formulations effectively.",
-        icon: "/ICONS/Alcahol.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Alcohol.jpg",
-      },
-      {
-        name: "Amino Acids",
-        desc: "Essential building blocks improving drug stability and bioavailability.",
-        icon: "/ICONS/Amino Acids.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Amino Acid.jpg",
-      },
-      {
-        name: "Buffers",
-        desc: "Maintain pH balance, ensuring formulation stability and efficacy.",
-        icon: "/ICONS/Buffers.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Buffers.jpg",
-      },
-      {
-        name: "Carbohydrates",
-        desc: "Provide energy and stabilization in pharmaceutical preparations.",
-        icon: "/ICONS/carbohydrates.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Carbohydrates.jpg",
-      },
-      {
-        name: "Enzymes",
-        desc: "Catalyse biochemical reactions, improving drug formulation efficiency.",
-        icon: "/ICONS/enzyme.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Enzymes.jpg",
-      },
-      {
-        name: "Fatty Acids",
-        desc: "Enhance solubility, absorption, and stability in drug delivery.",
-        icon: "/ICONS/Fatty Acid.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Fatty Acid.jpg",
-      },
-      {
-        name: "Lipids",
-        desc: "Improve drug solubility, absorption, and controlled release properties.",
-        icon: "/ICONS/Lipids.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Lipids.jpg",
-      },
-      {
-        name: "Mineral Salts",
-        desc: "Essential excipients supporting stability and bioavailability.",
-        icon: "/ICONS/Mineral Salts.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Mineral Salts.jpg",
-      },
-      {
-        name: "Oils",
-        desc: "Act as carriers, emulsifiers, and solubilizers in formulations.",
-        icon: "/ICONS/oil.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Oils.jpg",
-      },
-      {
-        name: "Parabens",
-        desc: "Widely used preservatives ensuring product safety and longevity.",
-        icon: "/ICONS/Parabens.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Parabens.jpg",
-      },
-      {
-        name: "Alcohol 2",
-        desc: "Solvent and preservative enhancing pharmaceutical formulations effectively.",
-        icon: "/ICONS/Alcahol.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Alcohol.jpg",
-      },
-      {
-        name: "Amino Acids 2",
-        desc: "Essential building blocks improving drug stability and bioavailability.",
-        icon: "/ICONS/Amino Acids.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Amino Acid.jpg",
-      },
-      {
-        name: "Buffers 2",
-        desc: "Maintain pH balance, ensuring formulation stability and efficacy.",
-        icon: "/ICONS/Buffers.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Buffers.jpg",
-      },
-      {
-        name: "Carbohydrates 2",
-        desc: "Provide energy and stabilization in pharmaceutical preparations.",
-        icon: "/ICONS/carbohydrates.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Carbohydrates.jpg",
-      },
-      {
-        name: "Enzymes 2",
-        desc: "Catalyse biochemical reactions, improving drug formulation efficiency.",
-        icon: "/ICONS/enzyme.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Enzymes.jpg",
-      },
-      {
-        name: "Fatty Acids 2",
-        desc: "Enhance solubility, absorption, and stability in drug delivery.",
-        icon: "/ICONS/Fatty Acid.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Fatty Acid.jpg",
-      },
-      {
-        name: "Lipids 2",
-        desc: "Improve drug solubility, absorption, and controlled release properties.",
-        icon: "/ICONS/Lipids.png",
-        Bgimage: "/CATEGORIES BACKGROUND BANNER/Lipids.jpg",
-      },
-    
+      name: "Alcohol",
+      desc: "Solvent and preservative enhancing pharmaceutical formulations effectively.",
+      icon: "/ICONS/Alcahol.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Alcohol.jpg",
+    },
+    {
+      name: "Amino Acids",
+      desc: "Essential building blocks improving drug stability and bioavailability.",
+      icon: "/ICONS/Amino Acids.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Amino Acid.jpg",
+    },
+    {
+      name: "Buffers",
+      desc: "Maintain pH balance, ensuring formulation stability and efficacy.",
+      icon: "/ICONS/Buffers.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Buffers.jpg",
+    },
+    {
+      name: "Carbohydrates",
+      desc: "Provide energy and stabilization in pharmaceutical preparations.",
+      icon: "/ICONS/carbohydrates.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Carbohydrates.jpg",
+    },
+    {
+      name: "Enzymes",
+      desc: "Catalyse biochemical reactions, improving drug formulation efficiency.",
+      icon: "/ICONS/enzyme.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Enzymes.jpg",
+    },
+    {
+      name: "Fatty Acids",
+      desc: "Enhance solubility, absorption, and stability in drug delivery.",
+      icon: "/ICONS/Fatty Acid.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Fatty Acid.jpg",
+    },
+    {
+      name: "Lipids",
+      desc: "Improve drug solubility, absorption, and controlled release properties.",
+      icon: "/ICONS/Lipids.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Lipids.jpg",
+    },
+    {
+      name: "Mineral Salts",
+      desc: "Essential excipients supporting stability and bioavailability.",
+      icon: "/ICONS/Mineral Salts.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Mineral Salts.jpg",
+    },
+    {
+      name: "Oils",
+      desc: "Act as carriers, emulsifiers, and solubilizers in formulations.",
+      icon: "/ICONS/oil.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Oils.jpg",
+    },
+    {
+      name: "Parabens",
+      desc: "Widely used preservatives ensuring product safety and longevity.",
+      icon: "/ICONS/Parabens.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Parabens.jpg",
+    },
+    {
+      name: "Alcohol 2",
+      desc: "Solvent and preservative enhancing pharmaceutical formulations effectively.",
+      icon: "/ICONS/Alcahol.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Alcohol.jpg",
+    },
+    {
+      name: "Amino Acids 2",
+      desc: "Essential building blocks improving drug stability and bioavailability.",
+      icon: "/ICONS/Amino Acids.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Amino Acid.jpg",
+    },
+    {
+      name: "Buffers 2",
+      desc: "Maintain pH balance, ensuring formulation stability and efficacy.",
+      icon: "/ICONS/Buffers.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Buffers.jpg",
+    },
+    {
+      name: "Carbohydrates 2",
+      desc: "Provide energy and stabilization in pharmaceutical preparations.",
+      icon: "/ICONS/carbohydrates.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Carbohydrates.jpg",
+    },
+    {
+      name: "Enzymes 2",
+      desc: "Catalyse biochemical reactions, improving drug formulation efficiency.",
+      icon: "/ICONS/enzyme.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Enzymes.jpg",
+    },
+    {
+      name: "Fatty Acids 2",
+      desc: "Enhance solubility, absorption, and stability in drug delivery.",
+      icon: "/ICONS/Fatty Acid.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Fatty Acid.jpg",
+    },
+    {
+      name: "Lipids 2",
+      desc: "Improve drug solubility, absorption, and controlled release properties.",
+      icon: "/ICONS/Lipids.png",
+      Bgimage: "/CATEGORIES BACKGROUND BANNER/Lipids.jpg",
+    },
   ],
   Function: [
     {
@@ -303,9 +302,7 @@ const categories = {
 export default function App() {
   const [activeCategory, setActiveCategory] = useState("Chemistry")
   const gridRef = useRef(null)
-  const outerMostDivRef = useRef(null)
   const [activeContainer, setActiveContainer] = useState("")
-  const [bgImage, setBgImage] = useState("")
   const overlayRef = useRef(null)
   const [currentPage, setCurrentPage] = useState(0)
   const [itemsPerPage, setItemsPerPage] = useState(
@@ -328,7 +325,7 @@ export default function App() {
 
 useEffect(() => {
   const updateItemsPerPage = () => {
-    setItemsPerPage(  window.innerWidth < 4 ? 3 : window.innerWidth < 640 ? 2 : window.innerWidth < 768 ? 4 : window.innerWidth < 1000 ? 6 : 10);
+    setItemsPerPage(  window.innerWidth < 480 ? 3 : window.innerWidth < 640 ? 2 : window.innerWidth < 768 ? 4 : window.innerWidth < 1000 ? 6 : 10);
   };
 
   window.addEventListener("resize", updateItemsPerPage);
@@ -341,13 +338,10 @@ useEffect(() => {
     }
   }, [activeCategory, currentPage])
 
-  const handleChangeBgImage = (newBgImage, name) => {
+  const handleMouseEnter = (newBgImage, name) => {
     if (!newBgImage) return
 
     setActiveContainer(name)
-
-    // Don't change anything if it's the same image
-    if (bgImage === newBgImage) return
 
     // Create a timeline for smooth transition
     const tl = gsap.timeline()
@@ -356,28 +350,22 @@ useEffect(() => {
     if (overlayRef.current) {
       overlayRef.current.style.backgroundImage = `url("${newBgImage}")`
 
-      // Fade in the overlay with the new image
-      tl.to(overlayRef.current, {
-        opacity: 1,
+      // Fade in the overlay with the new image to 50% opacity
+      tl.fromTo(overlayRef.current, { opacity: 0.5 }, { opacity: 0.5, duration: 0.5, ease: "power2.inOut" })
+    }
+  }
+
+  const handleMouseLeave = () => {
+    // Fade out the overlay when mouse leaves
+    if (overlayRef.current) {
+      gsap.to(overlayRef.current, {
+        opacity: 0,
         duration: 0.5,
         ease: "power2.inOut",
-        onComplete: () => {
-          // Update the main background state
-          setBgImage(newBgImage)
-
-          // Small delay before fading out overlay
-          setTimeout(() => {
-            // Fade out the overlay
-            gsap.to(overlayRef.current, {
-              opacity: 0,
-              duration: 0.5,
-              ease: "power2.inOut",
-            })
-          }, 100)
-        },
       })
     }
   }
+
 
   const handleNextPage = () => {
     if (gridRef.current) {
@@ -427,11 +415,17 @@ useEffect(() => {
   const currentItems = categories[activeCategory].slice(startIndex, endIndex)
 
   return (
-    <div className="bg-gradient-to-r from-white to-[#9d9c9c] h-full w-full overflow-x-hidden">
+    <div className="bg-gradient-to-r from-white to-[#9d9c9c] h-full w-full overflow-x-hidden pb-10 relative">
+  {/* Background overlay for transitions */}
+  <div
+    ref={overlayRef}
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 transition-opacity z-0"
+  />
   
-    
-     <div className="flex flex-col justify-center gap-0 px-1 lg:px-40 lg:py-1">
-        <div className="flex flex-row items-center gap-1 ">
+  {/* Content */}
+  <div className="relative z-10">
+    <div className="flex flex-col justify-center gap-0 px-1 lg:px-40 lg:py-1 mt-10">
+      <div className="flex flex-row items-center gap-1 ">
         <div className ="flex flex-row justify-center items-center gap-1">
     <div className="h-2 w-2  bg-[#3AC29A] rounded-full"></div>
       <div className="flex flex-col gap-1">
@@ -448,31 +442,16 @@ useEffect(() => {
     
 
     
-     <p className="text-regular text-[2vh] font-normal">Browse our comprehensive range of excipients for various pharmaceutical applications and formulations.</p>
+     <p className="text-regular text-[2vh] font-normal p-2 pl-10">Browse our comprehensive range of excipients for various pharmaceutical applications and formulations.</p>
      </div>
      
         
       
     <div
-      ref={outerMostDivRef}
-      className=" flex flex-col items-center px-6 py-2 sm:h-full lg:h-[80vh] relative"
-      style={{
-        backgroundImage: bgImage ? `url("${bgImage}")` : "none",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+   
     >
       {/* Overlay div for smooth transition */}
-      <div
-        ref={overlayRef}
-        className="absolute inset-0 z-0 opacity-0"
-        style={{
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      />
+      
 
       {/* Content container with higher z-index */}
       <div className="relative z-10 flex flex-col items-center w-full">
@@ -481,10 +460,10 @@ useEffect(() => {
           {Object.keys(categories).map((cat) => (
             <button
               key={cat}
-              className={` sm:px-2 lg:px-4 py-2 text-sm font-semibold rounded transition-all ${
+              className={` sm:px-2 lg:px-4 py-2 text-sm font-bold rounded transition-all ${
                 activeCategory === cat
-                  ? "underline underline-offset-2 text-[#2A8D70]"
-                  : "text-gray-600 hover:text-[#2A8D70]"
+                  ? "underline underline-offset-4 decoration-[#22604A] decoration-2 "
+                  : " "
               }`}
               onClick={() => {
                 setActiveCategory(cat)
@@ -497,12 +476,13 @@ useEffect(() => {
         </nav>
 
         {/* Grid container with navigation buttons */}
-        <div className="relative w-full max-w-6xl">
+        <div className="relative w-full max-w-6xl ">
           {/* Previous button */}
           {currentPage >0 && (
             <button
               onClick={handlePrevPage}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-20 bg-[#9dcdbf] backdrop-blur-sm rounded-full p-2 shadow-md hover:bg-[#2A8D70] hover:text-white ml-5 lg:ml-4 transition-colors"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-20 bg-[#9dcdbf] backdrop-blur-sm rounded-full p-2 shadow-md hover:bg-[#2A8D70] hover:text-white ml-16 md:ml-24
+               lg:ml-18 transition-colors"
               aria-label="Previous page"
             >
               <ChevronLeft className="w-4 h-4" />
@@ -512,22 +492,23 @@ useEffect(() => {
           {/* Grid */}
           <div
             ref={gridRef}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 w-full max-w-6xl"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-11 w-full max-w-6xl px-8 md:px-20"
           >
             {currentItems.map((item, index) => (
               <div
-                onClick={() => handleChangeBgImage(item.Bgimage, item.name)}
+                onMouseEnter={() => handleMouseEnter(item.Bgimage, item.name)}
+                onMouseLeave={handleMouseLeave}
                 key={index}
-                className={`border-1 rounded-lg flex justify-center items-center border-[#707070] p-2 hover:bg-[#2A8D70] hover:shadow-lg cursor-pointer hover:scale-105 transition-all duration-300 ${
+                className={`border-1 rounded-lg flex justify-center items-center w-full sm:w-[160px] md:w-[200px] h-[100px] md:h-[118px] border-[#707070] p-2 hover:bg-[#2A8D70] hover:shadow-lg cursor-pointer  transition-all duration-300 ${
                   activeContainer === item.name ? "bg-[#2A8D70]" : "bg-[#9dcdbf]/90"
                 }`}
               >
-                <div className="border-1 rounded-lg m-2 w-full h-32 flex flex-col items-center justify-center gap-2 bg-white shadow-md transition-transform duration-500 hover:scale-105">
-                  <div className="flex flex-row items-center w-full pl-3 gap-1">
-                    <img src={item.icon || "/placeholder.svg"} alt={item.name} className="w-10 h-10 object-contain" />
+                <div className="border-1 rounded-lg  w-full h-full flex flex-col items-center justify-center gap-2 bg-white shadow-md transition-transform duration-500 ">
+                  <div className="flex flex-row items-center w-full px-3 gap-1">
+                    <img src={item.icon || "/placeholder.svg"} alt={item.name} className="w-8 h-8 object-contain" />
                     <h3 className="text-sm font-semibold text-center underline">{item.name}</h3>
                   </div>
-                  <p className="text-xs font-normal text-black text-center">{item.desc}</p>
+                  <p className="text-[8px] font-normal px-3  text-black text-start ">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -537,7 +518,7 @@ useEffect(() => {
           {totalPages-1 >currentPage && (
             <button
               onClick={handleNextPage}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-20 bg-[#9dcdbf] backdrop-blur-sm rounded-full p-2 shadow-md hover:bg-[#2A8D70] hover:text-white mr-6 lg:mr-4 transition-colors"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-20 bg-[#9dcdbf] backdrop-blur-sm rounded-full p-2 shadow-md hover:bg-[#2A8D70] hover:text-white mr-16 md:mr-24 lg:mr-16 transition-colors"
               aria-label="Next page"
             >
               <ChevronRight className="w-4 h-4" />
@@ -547,6 +528,7 @@ useEffect(() => {
 
         
       </div>
+    </div>
     </div>
     </div>
   )

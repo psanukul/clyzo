@@ -4,100 +4,52 @@ import "../../index.css";
 
 const cardsData = [
   {
-    bgImage: "/GlobalPrinciple/BgImages/medicine.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner1.jpg",
+    bgImage: "/GlobalPrinciple/BgImages/PanReacAppliChem.png",
+    partnerImage: "/GlobalPrinciple/Partners/PanReacAppliChem.png",
   },
   {
-    bgImage: "/GlobalPrinciple/BgImages/medicine1.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner2.jpg",
+    bgImage: "/GlobalPrinciple/BgImages/TopScience.png",
+    partnerImage: "/GlobalPrinciple/Partners/TopScience.png",
   },
   {
-    bgImage: "/GlobalPrinciple/BgImages/medicine2.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner3.jpg",
+    bgImage: "/GlobalPrinciple/BgImages/Pharmabiotech.png",
+    partnerImage: "/GlobalPrinciple/Partners/PharmaBiotech.png",
   },
   {
-    bgImage: "/GlobalPrinciple/BgImages/medicine3.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner1.jpg",
+    bgImage: "/GlobalPrinciple/BgImages/cristalco.png",
+    partnerImage: "/GlobalPrinciple/Partners/cristalco.png",
   },
   {
-    bgImage: "/GlobalPrinciple/BgImages/medicine.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner1.jpg",
+    bgImage: "/GlobalPrinciple/BgImages/upi.png",
+    partnerImage: "/GlobalPrinciple/Partners/upi.png",
   },
   {
-    bgImage: "/GlobalPrinciple/BgImages/medicine1.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner2.jpg",
+    bgImage: "/GlobalPrinciple/BgImages/katwijk.png",
+    partnerImage: "/GlobalPrinciple/Partners/katwijk.png",
   },
   {
-    bgImage: "/GlobalPrinciple/BgImages/medicine.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner1.jpg",
+    bgImage: "/GlobalPrinciple/BgImages/athenstaedt.png",
+    partnerImage: "/GlobalPrinciple/Partners/athenstaedt.png",
   },
   {
-    bgImage: "/GlobalPrinciple/BgImages/medicine1.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner2.jpg",
+    bgImage: "/GlobalPrinciple/BgImages/chem-is-try.png",
+    partnerImage: "/GlobalPrinciple/Partners/chem-is-try.png",
   },
   {
-    bgImage: "/GlobalPrinciple/BgImages/medicine2.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner3.jpg",
+    bgImage: "/GlobalPrinciple/BgImages/kosterkeunen.png",
+    partnerImage: "/GlobalPrinciple/Partners/kosterKeunen.png",
   },
   {
-    bgImage: "/GlobalPrinciple/BgImages/medicine3.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner1.jpg",
+    bgImage: "/GlobalPrinciple/BgImages/pet-flavors.png",
+    partnerImage: "/GlobalPrinciple/Partners/PetFlavours.png",
   },
   {
-    bgImage: "/GlobalPrinciple/BgImages/medicine.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner1.jpg",
+    bgImage: "/GlobalPrinciple/BgImages/image.png",
+    partnerImage: "/GlobalPrinciple/Partners/image.png",
   },
   {
-    bgImage: "/GlobalPrinciple/BgImages/medicine1.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner2.jpg",
-  },
-  {
-    bgImage: "/GlobalPrinciple/BgImages/medicine.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner1.jpg",
-  },
-  {
-    bgImage: "/GlobalPrinciple/BgImages/medicine1.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner2.jpg",
-  },
-  {
-    bgImage: "/GlobalPrinciple/BgImages/medicine2.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner3.jpg",
-  },
-  {
-    bgImage: "/GlobalPrinciple/BgImages/medicine3.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner1.jpg",
-  },
-  {
-    bgImage: "/GlobalPrinciple/BgImages/medicine.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner1.jpg",
-  },
-  {
-    bgImage: "/GlobalPrinciple/BgImages/medicine1.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner2.jpg",
-  },
-  {
-    bgImage: "/GlobalPrinciple/BgImages/medicine.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner1.jpg",
-  },
-  {
-    bgImage: "/GlobalPrinciple/BgImages/medicine1.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner2.jpg",
-  },
-  {
-    bgImage: "/GlobalPrinciple/BgImages/medicine2.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner3.jpg",
-  },
-  {
-    bgImage: "/GlobalPrinciple/BgImages/medicine3.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner1.jpg",
-  },
-  {
-    bgImage: "/GlobalPrinciple/BgImages/medicine.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner1.jpg",
-  },
-  {
-    bgImage: "/GlobalPrinciple/BgImages/medicine1.jpg",
-    partnerImage: "/GlobalPrinciple/Partners/Partner2.jpg",
+    bgImage: "/GlobalPrinciple/BgImages/sunway.png",
+    partnerImage: "/GlobalPrinciple/Partners/sunway.png",
   },
 ];
 
@@ -131,7 +83,7 @@ const GlobalPrinciple = () => {
           </h1>
         </div>
 
-        <p className="text-regular text-[2vh] font-normal">
+        <p className="text-regular text-[2vh] font-normal p-2 pl-10">
           Partnering with leading global principals, we deliver superior
           excipients, ensuring quality and efficient distribution..
         </p>
