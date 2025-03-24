@@ -1,22 +1,21 @@
 import React from "react";
 
 const Card = ({ bgImage, partnerImage }) => {
-    console.log(partnerImage)
+  console.log(partnerImage);
   return (
     <div
-      className="flex justify-center items-center w-40 h-40  rounded-2xl overflow-hidden shadow-lg bg-cover bg-center transform transition-transform duration-300 group hover:scale-105"
+      className="flex justify-center items-center w-40 h-48  rounded-lg overflow-hidden shadow-lg bg-cover bg-center transform transition-transform duration-300 group hover:scale-105"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Child div with partner background */}
       <div
-  className="h-24 w-24 bg-cover bg-center rounded-2xl overflow-hidden shadow-lg  transform transition-transform duration-300 group-hover:scale-105 "
-  style={{
-    backgroundImage: `url(${partnerImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
-/>
-
+        className="h-24 w-24 bg-cover bg-center rounded-2xl overflow-hidden shadow-lg  transform transition-transform duration-300 group-hover:scale-105 "
+        style={{
+          backgroundImage: `url(${partnerImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
     </div>
   );
 };

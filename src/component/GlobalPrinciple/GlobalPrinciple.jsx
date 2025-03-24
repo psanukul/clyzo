@@ -66,8 +66,8 @@ const GlobalPrinciple = () => {
     preloadImages();
   }, []);
   return (
-    <div className="bg-white mt-5 w-full mb-80 md:mb-48 -z-3 ">
-      <div className="flex flex-col justify-center gap-0 px-1 lg:px-40 lg:py-1">
+    <div className="bg-white mt-5  mx-44 -z-3 ">
+      <div className="flex flex-col justify-center gap-0 lg:py-1">
         <div className="flex flex-row items-center gap-1 ">
           <div className="flex flex-row justify-center items-center gap-1">
             <div className="h-2 w-2  bg-[#3AC29A] rounded-full"></div>
@@ -91,8 +91,8 @@ const GlobalPrinciple = () => {
 
       {/* card Section  */}
 
-      <div className="p-5  max-w-full  overflow-x-auto pb-10">
-        <div className="grid grid-rows-2 grid-flow-col gap-20  min-w-max p-8">
+      <div className="py-5  max-w-full  overflow-x-auto pb-10">
+        <div className="grid grid-rows-2 grid-flow-col  gap-x-4 gap-y-4 min-w-max items-center justify-center">
           {cardsData.map((card, index) => (
             <Card
               key={index}
