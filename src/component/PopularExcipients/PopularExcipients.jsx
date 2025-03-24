@@ -103,7 +103,7 @@ export default function CategoryGrid() {
   };
 
   return (
-    <div className="bg-white mt-5 w-full  -z-3 ">
+    <div className="bg-white mt-5 w-full   -z-3 ">
       <div className="flex flex-col justify-center gap-0 px-1 lg:px-40 lg:py-1 ">
         <div className="flex flex-row items-center gap-1 ">
           <div className="flex flex-row justify-center items-center gap-1">
@@ -120,7 +120,7 @@ export default function CategoryGrid() {
           </h1>
         </div>
 
-        <p className="text-regular text-[2vh] font-normal pb-8">
+        <p className="text-regular text-[2vh] font-normal pb-8 p-2 pl-10">
         Here is the list of the most popular excipients that are commonly searched for and used in the pharmaceutical industry
         </p>
       </div>
@@ -134,15 +134,30 @@ export default function CategoryGrid() {
             <ChevronLeft className="w-6 h-6" />
           </button>
         )}
-        <div ref={gridRef} className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6">
-          {currentItems.map((card, index) => (
-            <div key={index} className="flex flex-col justify-center items-center overflow-hidden cursor-pointer group  bg-gray-300 hover:scale-105 hover:shadow-lg duration-500 shadow-md">
-              <img src={card.bgImage} alt={card.title} className="w-full h-40 object-cover group-hover:scale-105 duration-500 " />
-              <p className="mt-2 text-xs font-semibold text-center">{card.title}</p>
-              <button className="mt-auto mb-1  border-2 border-green-700 w-1/2 text-center  text-green-700 rounded-full hover:scale-105   hover:bg-green-700 hover:text-white duration-500">Buy Now</button>
-            </div>  
-          ))}
-        </div>
+        <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+  {currentItems.map((card, index) => (
+    <div key={index} className="flex flex-col justify-center items-center overflow-hidden cursor-pointer  bg-gradient-to-b from-[#bbbbbb] to-[#ffffff]">
+      
+      {/* Image Container */}
+      <div className="relative w-full h-40 group">
+        <img src={card.bgImage} alt={card.title} className="w-full h-full object-cover transition-all duration-300" />
+        
+        {/* Gradient Overlay Applied Only to Image */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#52b295b9] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+
+      {/* Content */}
+      <div className="w-full h-20 flex flex-col justify-center items-center">
+        <p className="mt-2 w-full text-[10px] font-normal text-start px-2">{card.title}</p>
+        <button className="mt-auto mb-1 border-2 border-green-700 w-20 text-center text-xs text-green-700 rounded-full">
+          Buy Now
+        </button>
+      </div>
+
+    </div>
+  ))}
+</div>
+
         {totalPages > currentPage && (
           <button
             onClick={handleNextPage}
