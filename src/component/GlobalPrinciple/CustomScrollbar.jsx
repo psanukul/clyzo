@@ -61,7 +61,7 @@ const HorizontalScrollbar = ({
   }, [isDragging]);
 
   return (
-    <div className="mt-3 relative h-1 mx-auto w-full px-8">
+    <div className="mt-3 relative h-1 mx-4 ">
       <div
         ref={scrollTrackRef}
         className="absolute inset-0 bg-[#BBEADC] rounded-full"

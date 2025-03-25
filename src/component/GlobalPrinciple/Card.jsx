@@ -9,7 +9,7 @@ const Card = ({ bgImage, partnerImage }) => {
     >
       {/* Child div with partner background */}
       <div
-        className="h-24 w-24 bg-cover bg-center rounded-2xl overflow-hidden shadow-lg  transform transition-transform duration-300 group-hover:scale-105 "
+        className="h-28 w-28 bg-cover bg-center overflow-hidden  transform transition-transform duration-300 group-hover:scale-105 "
         style={{
           backgroundImage: `url(${partnerImage})`,
           backgroundSize: "cover",

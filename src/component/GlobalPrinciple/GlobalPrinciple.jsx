@@ -82,7 +82,7 @@ const GlobalPrinciple = () => {
   const memoizedCardsData = useMemo(() => cardsData, []);
 
   return (
-    <div className="bg-white mt-7  mx-52 -z-3 ">
+    <div className="bg-white mt-7  mx-48 -z-3 ">
       <div className="flex flex-col px-[60px] justify-center gap-0 lg:py-1">
         <div className="flex flex-row items-center gap-2 ">
           <div className="flex flex-row justify-center items-center gap-1">
@@ -109,7 +109,7 @@ const GlobalPrinciple = () => {
 
       <div
         ref={scrollContainerRef}
-        className="py-8 no-scrollbar max-w-full  overflow-x-auto pb-10"
+        className="py-8  px-5 no-scrollbar max-w-full  overflow-x-auto pb-10"
       >
         <div className="grid grid-rows-2 grid-flow-col  gap-x-4 gap-y-4 min-w-max items-center justify-center">
           {memoizedCardsData.map((card, index) => (
