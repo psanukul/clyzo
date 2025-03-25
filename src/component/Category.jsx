@@ -11,41 +11,41 @@ import "@fontsource/oswald"; // Regular font
 gsap.registerPlugin(ScrollTrigger)
 
 const CategoriesSection = () => {
-//   const sectionRef = useRef(null)
-//   const customersRef = useRef(null)
-//   const partnersRef = useRef(null)
-//   const productsRef = useRef(null)
+  const sectionRef = useRef(null)
+  const customersRef = useRef(null)
+  const partnersRef = useRef(null)
+  const productsRef = useRef(null)
 
-  // useEffect(() => {
-    // gsap.fromTo(
-    //   sectionRef.current,
-    //   { opacity: 0, y: 50 },
-    //   {
-    //     opacity: 1,
-    //     y: 0,
-    //     duration: 1,
-    //     ease: "power3.out",
-    //     scrollTrigger: { trigger: sectionRef.current, start: "top 80%" },
-    //   },
-    // )
+  useEffect(() => {
+    gsap.fromTo(
+      sectionRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: { trigger: sectionRef.current, start: "top 80%" },
+      },
+    )
 
-    // const animateCounter = (target, endValue) => {
-    //   const obj = { val: 0 }
-    //   gsap.to(obj, {
-    //     val: endValue,
-    //     duration: 3,
-    //     roundProps: "val",
-    //     onUpdate: () => {
-    //       target.innerHTML = obj.val + "+"
-    //     },
-    //     scrollTrigger: { trigger: target, start: "top 90%" },
-    //   })
-    // }
+    const animateCounter = (target, endValue) => {
+      const obj = { val: 0 }
+      gsap.to(obj, {
+        val: endValue,
+        duration: 3,
+        roundProps: "val",
+        onUpdate: () => {
+          target.innerHTML = obj.val + "+"
+        },
+        scrollTrigger: { trigger: target, start: "top 90%" },
+      })
+    }
 
-    // animateCounter(customersRef.current, 350)
-    // animateCounter(partnersRef.current, 50)
-    // animateCounter(productsRef.current, 600)
-  // }, [])
+    animateCounter(customersRef.current, 350)
+    animateCounter(partnersRef.current, 50)
+    animateCounter(productsRef.current, 600)
+  }, [])
 
   return (
     <section  className="w-full py-6 bg-[#f5f3ed]">
@@ -57,7 +57,7 @@ const CategoriesSection = () => {
         <div className="flex flex-col md:flex-row justify-evenly items-center gap-8 md:gap-4">
           <div className="flex flex-col items-center">
             <span
-            //   ref={customersRef}
+              ref={customersRef}
               className="text-6xl md:text-8xl font-bold text-transparent"
               style={{
                 WebkitTextStroke: "2px #3cb489",
@@ -73,7 +73,7 @@ const CategoriesSection = () => {
 
           <div className="flex flex-col items-center">
             <span
-            //   ref={partnersRef}
+              ref={partnersRef}
               className="text-6xl md:text-8xl font-bold text-transparent"
               style={{
                 WebkitTextStroke: "2px #3cb489",
@@ -89,7 +89,7 @@ const CategoriesSection = () => {
 
           <div className="flex flex-col items-center">
             <span
-            //   ref={productsRef}
+              ref={productsRef}
               className="text-6xl md:text-8xl font-bold text-transparent"
               style={{
                 WebkitTextStroke: "2px #3cb489",

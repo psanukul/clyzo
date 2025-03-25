@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { gsap } from "gsap"
 import { ChevronLeft, ChevronRight, Play } from "lucide-react"
-import person1 from "../assets/image.png"
+import person1 from "../assets/image1.png"
 import person2 from "../assets/image2.jpg"
 import person3 from "../assets/image3.jpg"
 import person4 from "../assets/image4.jpg"
@@ -115,8 +115,8 @@ const Testimonials = () => {
   }, [activeIndex])
 
   return (
-    <div className="bg-white">
-      <div className="max-w-3xl mx-auto px-4 py-12">
+    <div className="bg-white mb-12">
+      <div className="max-w-4xl mx-auto ">
         <div ref={headerRef} className="flex items-center gap-3 mb-2">
           <div className="flex items-center">
             <div className="h-2 w-2 bg-[#3AC29A] rounded-full"></div>
@@ -131,14 +131,14 @@ const Testimonials = () => {
           </h1>
         </div>
 
-        <p ref={subtitleRef} className="text-base text-gray-700 mb-8 my-2 mx-4">
+        <p ref={subtitleRef} className="text-sm text-gray-700 mb-8 my-2 ml-10">
           Discover how our customers benefit from our quality, reliability, and delivery of excipient solutions.
-        </p>
+        </p> 
 
         <div className="relative">
           {/* Main testimonial */}
           <div ref={mainRef} className="relative rounded-lg overflow-hidden mb-6">
-            <div className="relative h-[400px] bg-gradient-to-r from-gray-300/10 to-gray-100/5">
+            <div className="relative h-[450px] bg-gradient-to-r from-gray-300/10 to-gray-100/5">
               <img
                 src={testimonials[activeIndex].image || "/placeholder.svg"}
                 alt={testimonials[activeIndex].name}
@@ -197,7 +197,7 @@ const Testimonials = () => {
           {/* Navigation arrows */}
           <button
             onClick={prevTestimonial}
-            className="absolute top-1/2 left-3 -translate-y-1/2 -translate-x-1/2 bg-white rounded-r-md py-6 px-0.1 shadow-lg z-20 hover:bg-gray-100 transition-all"
+            className="absolute top-1/2 left-3 -translate-y-1/2 -translate-x-1/2 bg-white rounded-r-md py-10 px-0.1 shadow-lg z-20 hover:bg-gray-100 transition-all"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -205,7 +205,7 @@ const Testimonials = () => {
 
           <button
             onClick={nextTestimonial}
-            className="absolute top-1/2 right-3 -translate-y-1/2 translate-x-1/2 bg-white rounded-l-md py-6 px-0.1 shadow-lg z-20 hover:bg-gray-100 transition-all"
+            className="absolute top-1/2 right-3 -translate-y-1/2 translate-x-1/2 bg-white rounded-l-md py-10 px-0.1 shadow-lg z-20 hover:bg-gray-100 transition-all"
             aria-label="Next testimonial"
           >
             <ChevronRight className="w-6 h-6" />
