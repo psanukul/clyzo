@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.slider-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+
+}
+
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+
+}

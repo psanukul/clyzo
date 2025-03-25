@@ -9,6 +9,13 @@ import "@fontsource/oswald"; // Regular font
 import "@fontsource/questrial"; // Questrial font
 
 
+import PopularExcipients from "./component/PopularExcipients/PopularExcipients.jsx";
+import OtherServices from "./component/OtherServices/OtherServices.jsx";
+import ResourcesDowonloads from "./component/ResourcesDowonloads/ResourcesDowonloads.jsx";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+
 function App() {
   return (
     <div className="max-w-full overflow-hidden">
@@ -17,6 +24,9 @@ function App() {
       <Categories />
       <GlobalPrinciple />
       <Testimonials/>
+      <PopularExcipients/>
+      <OtherServices/>
+       <ResourcesDowonloads/>
       <ContactUs/>
       <Footer />
     </div>
