@@ -1,10 +1,10 @@
-import React from "react";
+import React, { memo } from "react";
 
 const Card = ({ bgImage, partnerImage }) => {
-  console.log(partnerImage);
+  console.log('card is rendering');
   return (
     <div
-      className="flex justify-center items-center w-48 h-60  rounded-lg overflow-hidden shadow-lg bg-cover bg-center transform transition-transform duration-300 group hover:scale-105"
+      className="flex justify-center items-center w-48 h-[235px]  rounded-lg overflow-hidden shadow-lg bg-cover bg-center transform transition-transform duration-300 group hover:scale-105"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Child div with partner background */}
@@ -20,4 +20,4 @@ const Card = ({ bgImage, partnerImage }) => {
   );
 };
 
-export default Card;
+export default memo(Card);
